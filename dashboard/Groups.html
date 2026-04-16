@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://www.jsdelivr.com/package/npm/themify-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css"> -->
+    <!--  <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css"> -->
+    <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/metisMenu.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="overlay"></div>
+        <!-- sidebar -->
+
+        <nav class="sidebar dark_sidebar">
+            <div class="logo d-flex justify-content-between">
+                <a class="large_logo" href="index.html">Vertex Technosys</a>
+                <!-- <div class="sidebar_close_icon d-lg-none">
+                    <i class="ti-close"></i>
+                </div> -->
+            </div>
+            <ul id="sidebar_menu" class="metismenu">
+                <li class="">
+                    <a href="index.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-home menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Dashboard </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="tabs.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-file menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Tabs</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-user menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Pages</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="password.html">Forgot Password</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fab fa-app-store"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Applications</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="mail.html">Mailbox</a></li>
+                        <li><a href="chat.html">Chat</a></li>
+                        <li><a href="faq.html">FAQ Section</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fad fa-bring-forward menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>forms</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="Basic_Elements.html">Basic Elements</a></li>
+                        <li><a href="Groups.html" class="active">Groups</a></li>
+                        <li><a href="Max_Length.html">Max Length</a></li>
+                        <li><a href="Layouts.html">Layouts</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="far fa-border-none menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Table</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="basic-table.html">Basic Table</a></li>
+                        <li><a href="data-table.html" class="active">Data Tables</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-font menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Icons</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="ficon.html">Fontawesome Icon</a></li>
+                        <li><a href="ticon.html">themefy icon</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="chart.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fal fa-chart-pie-alt"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Charts</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="map.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fal fa-globe-europe"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Maps</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="blank.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-file menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Blank</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="error.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="far fa-exclamation-triangle 2x menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Error</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- sidebar wrapper -->
+
+        <!-- Page-content -->
+        <div id="page-content-wrapper">
+            <div id="content">
+                <div class="container-fluid p-0 px-lg-0 px-md-0">
+                    <div class="main-content pt-0">
+                        <nav class="navbar navbar-expand navbar-light my-navbar">
+                            <div type="button" id="bar" class="nav-icon1 humburger animated fadeInLeft  sidebar_icon" data-toggle="offcanvas">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <!-- Top bar Search -->
+                            <form class="d-none d-sm-inline-block form-inline navbar-search px-3">
+                                <div class="input-group">
+                                    <input type="text" name="search" class="form-control bg-light" placeholder="Search for..">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button"><i class="far fa-search fa-sm"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Top Bar nav -->
+                            <div class="header_right d-flex justify-content-end align-items-center">
+                                <div class="header_notification_warp d-flex align-items-center">
+                                    <li>
+                                        <a class="CHATBOX_open nav-link-notify" href="#"> <i class="far fa-envelope"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a class="bell_notification_clicker nav-link-notify" href="#"> <i class="far fa-bell fa-fw"></i>
+                                            <!-- <span>2</span> -->
+                                        </a>
+                                    </li>
+
+                                </div>
+                                <div class="profile_info d-flex align-items-center">
+                                    <div class="profile_thumb mr_20">
+                                        <img src="images/1.png" alt="#">
+                                    </div>
+                                    <div class="author_name">
+                                        <h4 class="f_s_15 f_w_500 mb-0">Jiue Anderson</h4>
+                                        <p class="f_s_12 f_w_400">Manager</p>
+                                    </div>
+                                    <div class="profile_info_iner">
+                                        <div class="profile_author_name">
+                                            <p>Manager</p>
+                                            <h5>Jiue Anderson</h5>
+                                        </div>
+                                        <div class="profile_info_details">
+                                            <a href="#">My Profile </a>
+                                            <a href="#">Settings</a>
+                                            <a href="#">Log Out </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Top Bar nav -->
+                            <!-- Top bar Search -->
+                        </nav>
+                    </div>
+
+                    <!-- content starts -->
+                    <div class="main-content">
+                        <!-- Begin Page Content -->
+                        <div class="container-fluid px-lg-4">
+                            <div class="row">
+                                <div class="col-md-12 mt-lg-4 mt-4">
+                                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                        <h1 class="h3 mb-0 text-gray-800">Basic Inputs</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Begin Page Content -->
+                        <div class="inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <div class="page-body">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0">Input Groups</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+
+                                                        <h6 class="card-subtitle mb-2">Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code class="highlighter-rouge">&lt;label&gt;</code>s outside the input
+                                                            group.
+                                                        </h6>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                                            </div>
+                                                        </div>
+                                                        <label for="basic-url">Your vanity URL</label>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">$</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text">.00</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">$</span>
+                                                                <span class="input-group-text">0.00</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text">$</span>
+                                                                <span class="input-group-text">0.00</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">With textarea</span>
+                                                            </div>
+                                                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">First and last name</span>
+                                                            </div>
+                                                            <input type="text" aria-label="First name" class="form-control">
+                                                            <input type="text" aria-label="Last name" class="form-control">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text">
+                                                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                </div>
+                                                            </div>
+                                                            <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text">
+                                                                    <input type="radio" aria-label="Radio button for following text input">
+                                                                </div>
+                                                            </div>
+                                                            <input type="text" class="form-control" aria-label="Text input with radio button">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0">Buttons with dropdowns</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+
+                                                        <h6 class="card-subtitle mb-2">List of buttons with dropdowns</h6>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <button class="btn btn-light" type="button" id="button-addon1">Button</button>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon-group">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-light" type="button" id="button-addon-group">Button</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend" id="button-addon3">
+                                                                <button class="btn btn-light" type="button">Button</button>
+                                                                <button class="btn btn-light" type="button">Button</button>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" aria-describedby="button-addon3">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+                                                            <div class="input-group-append" id="button-addon4">
+                                                                <button class="btn btn-light" type="button">Button</button>
+                                                                <button class="btn btn-light" type="button">Button</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                                    <div role="separator" class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                                </div>
+                                                            </div>
+                                                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                                    <div role="separator" class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="btn btn-light">Action</button>
+                                                                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <span class="sr-only">Toggle Dropdown</span>
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                                    <div role="separator" class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                                </div>
+                                                            </div>
+                                                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                                                            <div class="input-group-append">
+                                                                <button type="button" class="btn btn-light">Action</button>
+                                                                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <span class="sr-only">Toggle Dropdown</span>
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                                    <div role="separator" class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0">Custom select</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+
+                                                        <h6 class="card-subtitle mb-2">List of Custom select.</h6>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                                                            </div>
+                                                            <select class="custom-select" id="inputGroupSelect01">
+                                                                <option selected="">Choose...</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <select class="custom-select" id="inputGroupSelect02">
+                                                                <option selected="">Choose...</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            <div class="input-group-append">
+                                                                <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <button class="btn btn-light" type="button">Button</button>
+                                                            </div>
+                                                            <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                                                                <option selected="">Choose...</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-group">
+                                                            <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                                                <option selected="">Choose...</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-light" type="button">Button</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0">Custom file input</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+
+
+                                                        <h6 class="card-subtitle mb-2">List of Custom file input.</h6>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                                                            </div>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                                                <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                                                            </div>
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <button class="btn btn-light" type="button" id="inputGroupFileAddon03">Button</button>
+                                                            </div>
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
+                                                                <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+                                                                <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                                                            </div>
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-light" type="button" id="inputGroupFileAddon04">Button</button>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content Ends -->
+                </div>
+            </div>
+        </div>
+        <!-- Page content -->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="js/metisMenu.js"></script>
+    <script src="./js/popup.js"></script>
+    <!-- <script type="text/javascript">
+        $('#bar').click(function() {
+            $(this).toggleClass('close');
+            $('#page-content-wrapper ,#sidebar-wrapper').toggleClass('toggled');
+        })
+    </script> -->
+    <script>
+        $('.sidebar_icon').on('click', function() {
+            $('.sidebar ,#page-content-wrapper').toggleClass('active_sidebar');
+        });
+        $('.sidebar_close_icon').on('click', function() {
+            $('.sidebar ,#page-content-wrapper').removeClass('active_sidebar');
+        });
+    </script>
+    <script>
+        $(document).on("click.nice_select", ".nice-select", function(event) {
+            var $dropdown = $(this);
+
+            $(".nice-select")
+                .not($dropdown)
+                .removeClass("open");
+            $dropdown.toggleClass("open");
+
+            if ($dropdown.hasClass("open")) {
+                $dropdown.find(".option");
+                $dropdown.find(".nice-select-search").val("");
+                $dropdown.find(".nice-select-search").focus();
+                $dropdown.find(".focus").removeClass("focus");
+                $dropdown.find(".selected").addClass("focus");
+                $dropdown.find("ul li").show();
+            } else {
+                $dropdown.focus();
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+    <script>
+        $("#sidebar_menu").metisMenu();
+        // metisMenu 
+        $("#admin_profile_active").metisMenu();
+        $("#sidebar_menu").find("a").removeClass("active");
+        $("#sidebar_menu").find("li").removeClass("mm-active");
+        $("#sidebar_menu").find("li ul").removeClass("mm-show");
+
+        var current = window.location.pathname
+        $("#sidebar_menu >li a").filter(function() {
+
+            var link = $(this).attr("href");
+            if (link) {
+                if (current.indexOf(link) != -1) {
+                    $(this).parents().parents().children('ul.mm-collapse').addClass('mm-show').closest('li').addClass('mm-active');
+                    $(this).addClass('active');
+                    return false;
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

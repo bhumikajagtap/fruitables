@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://www.jsdelivr.com/package/npm/themify-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css"> -->
+    <!--  <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css"> -->
+    <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/metisMenu.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="overlay"></div>
+        <!-- sidebar -->
+
+        <nav class="sidebar dark_sidebar">
+            <div class="logo d-flex justify-content-between">
+                <a class="large_logo" href="index.html">Vertex Technosys</a>
+                <!-- <div class="sidebar_close_icon d-lg-none">
+                    <i class="ti-close"></i>
+                </div> -->
+            </div>
+            <ul id="sidebar_menu" class="metismenu">
+                <li class="">
+                    <a href="index.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-home menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Dashboard </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="tabs.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-file menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Tabs</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-user menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Pages</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="password.html">Forgot Password</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fab fa-app-store"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Applications</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="mail.html">Mailbox</a></li>
+                        <li><a href="chat.html">Chat</a></li>
+                        <li><a href="faq.html">FAQ Section</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fad fa-bring-forward menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>forms</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="Basic_Elements.html">Basic Elements</a></li>
+                        <li><a href="Groups.html">Groups</a></li>
+                        <li><a href="Max_Length.html">Max Length</a></li>
+                        <li><a href="Layouts.html" class="active">Layouts</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="far fa-border-none menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Table</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="basic-table.html">Basic Table</a></li>
+                        <li><a href="data-table.html" class="active">Data Tables</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-font menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Icons</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="ficon.html">Fontawesome Icon</a></li>
+                        <li><a href="ticon.html">themefy icon</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="chart.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fal fa-chart-pie-alt"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Charts</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="map.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fal fa-globe-europe"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Maps</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="blank.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-file menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Blank</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="error.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="far fa-exclamation-triangle 2x menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Error</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- sidebar wrapper -->
+
+        <!-- Page-content -->
+        <div id="page-content-wrapper">
+            <div id="content">
+                <div class="container-fluid p-0 px-lg-0 px-md-0">
+                    <div class="main-content pt-0">
+                        <nav class="navbar navbar-expand navbar-light my-navbar">
+                            <div type="button" id="bar" class="nav-icon1 humburger animated fadeInLeft  sidebar_icon" data-toggle="offcanvas">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <!-- Top bar Search -->
+                            <form class="d-none d-sm-inline-block form-inline navbar-search px-3">
+                                <div class="input-group">
+                                    <input type="text" name="search" class="form-control bg-light" placeholder="Search for..">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button"><i class="far fa-search fa-sm"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Top Bar nav -->
+                            <div class="header_right d-flex justify-content-end align-items-center">
+                                <div class="header_notification_warp d-flex align-items-center">
+                                    <li>
+                                        <a class="CHATBOX_open nav-link-notify" href="#"> <i class="far fa-envelope"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a class="bell_notification_clicker nav-link-notify" href="#"> <i class="far fa-bell fa-fw"></i>
+                                            <!-- <span>2</span> -->
+                                        </a>
+                                    </li>
+
+                                </div>
+                                <div class="profile_info d-flex align-items-center">
+                                    <div class="profile_thumb mr_20">
+                                        <img src="images/1.png" alt="#">
+                                    </div>
+                                    <div class="author_name">
+                                        <h4 class="f_s_15 f_w_500 mb-0">Jiue Anderson</h4>
+                                        <p class="f_s_12 f_w_400">Manager</p>
+                                    </div>
+                                    <div class="profile_info_iner">
+                                        <div class="profile_author_name">
+                                            <p>Manager</p>
+                                            <h5>Jiue Anderson</h5>
+                                        </div>
+                                        <div class="profile_info_details">
+                                            <a href="#">My Profile </a>
+                                            <a href="#">Settings</a>
+                                            <a href="#">Log Out </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Top Bar nav -->
+                            <!-- Top bar Search -->
+                        </nav>
+                    </div>
+
+                    <!-- content starts -->
+                    <div class="main-content">
+                        <!-- Begin Page Content -->
+                        <div class="container-fluid px-lg-4">
+                            <div class="row">
+                                <div class="col-md-12 mt-lg-4 mt-4">
+                                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                        <h1 class="h3 mb-0 text-gray-800">Basic Inputs</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Begin Page Content -->
+                        <div class="inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <div class="page-body">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0">Basic Form</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+
+                                                        <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6>
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Email address</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputPassword1">Password</label>
+                                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                            </div>
+                                                            <div class="form-group form-check">
+                                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                                        </form>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0">Horizontal form</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+
+
+                                                        <h6 class="card-subtitle mb-2">Create horizontal forms with the grid by adding the <code class="highlighter-rouge">.row</code> class to form groups and using the <code class="highlighter-rouge">.col-*-*</code> classes to specify
+                                                            the width of your labels and controls. Be sure to add <code class="highlighter-rouge">.col-form-label</code> to your <code class="highlighter-rouge">&lt;label&gt;</code>s as well so they’re vertically
+                                                            centered with their associated form controls.</h6>
+                                                        <form>
+                                                            <div class="form-group row">
+                                                                <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
+                                                                <div class="col-sm-8">
+                                                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
+                                                                <div class="col-sm-8">
+                                                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                                                </div>
+                                                            </div>
+                                                            <fieldset class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-form-label col-sm-4 pt-0">Radios</div>
+                                                                    <div class="col-sm-8">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
+                                                                            <label class="form-check-label" for="gridRadios1">
+                                                                            First radio
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                                            <label class="form-check-label" for="gridRadios2">
+                                                                            Second radio
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check disabled">
+                                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled="">
+                                                                            <label class="form-check-label" for="gridRadios3">
+                                                                            Third disabled radio
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </fieldset>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-4">Checkbox</div>
+                                                                <div class="col-sm-8">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                                        <label class="form-check-label" for="gridCheck1">
+                                                                        Example checkbox
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-10">
+                                                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0">Inline Form</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+
+
+                                                        <h6 class="card-subtitle mb-2">Use the <code class="highlighter-rouge">.form-inline</code> class to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms vary slightly
+                                                            from their default states.</h6>
+                                                        <h5 class="card-title font-16">Inline Form</h5>
+                                                        <form class="form-inline">
+                                                            <div class="form-group mb-2">
+                                                                <label for="staticEmail2" class="sr-only">Email</label>
+                                                                <input type="text" readonly="" class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+                                                            </div>
+                                                            <div class="form-group mx-sm-3 mb-2">
+                                                                <label for="inputPassword2" class="sr-only">Password</label>
+                                                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+                                                        </form>
+                                                        <h5 class="card-title font-16 mt-3">Auto-sizing Form</h5>
+                                                        <form>
+                                                            <div class="form-row align-items-center">
+                                                                <div class="col-auto">
+                                                                    <label class="sr-only" for="inlineFormInput">Name</label>
+                                                                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                                                    <div class="input-group mb-2">
+                                                                        <div class="input-group-prepend">
+                                                                            <div class="input-group-text">@</div>
+                                                                        </div>
+                                                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="form-check mb-2">
+                                                                        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                                                        <label class="form-check-label" for="autoSizingCheck">
+                                                                        Remember me
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0">Form row</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+                                                        <div class="card-body">
+                                                            <h6 class="card-subtitle mb-2">You may also swap <code class="highlighter-rouge">.row</code> for <code class="highlighter-rouge">.form-row</code>, a variation of our standard grid row that overrides the default column gutters
+                                                                for tighter and more compact layouts.</h6>
+                                                            <form>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="inputEmail4">Email</label>
+                                                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                                                    </div>
+                                                                    <div class="form-group col-md-6">
+                                                                        <label for="inputPassword4">Password</label>
+                                                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="inputAddress">Address</label>
+                                                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="inputAddress2">Address 2</label>
+                                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-5">
+                                                                        <label for="inputCity">Department</label>
+                                                                        <div class="search_select_box">
+                                                                            <select class="w-100" data-live-search="true">
+                                                                                <option  selected>Choose your department</option>
+                                                                                <option>Web Design</option>
+                                                                                <option>Web Development</option>
+                                                                                <option>App Development</option>
+                                                                                <option>Digital Marketing</option>
+                                                                                <option>SEO</option>
+                                                                                <option>Social Media Marketing</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group col-md-5">
+                                                                        <label for="inputState">State</label>
+                                                                        <div class="search_select_box">
+                                                                            <select class="w-100" data-live-search="true">
+                                                                                <option  selected>Choose your country</option>
+                                                                                <option>India</option>
+                                                                                <option>Germany</option>
+                                                                                <option>USA</option>
+                                                                                <option>France</option>
+                                                                                <option>Poland</option>
+                                                                                <option>Japan</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group col-md-2">
+                                                                        <label for="inputZip">Zip</label>
+                                                                        <input type="text" class="form-control" id="inputZip">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                                        <label class="form-check-label" for="gridCheck">
+                                                                        Check me out
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content Ends -->
+                </div>
+            </div>
+        </div>
+        <!-- Page content -->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/metisMenu.js"></script>
+    <script src="./js/popup.js"></script>
+    <!-- <script type="text/javascript">
+        $('#bar').click(function() {
+            $(this).toggleClass('close');
+            $('#page-content-wrapper ,#sidebar-wrapper').toggleClass('toggled');
+        })
+    </script> -->
+    <script>
+        $('.sidebar_icon').on('click', function() {
+            $('.sidebar ,#page-content-wrapper').toggleClass('active_sidebar');
+        });
+        $('.sidebar_close_icon').on('click', function() {
+            $('.sidebar ,#page-content-wrapper').removeClass('active_sidebar');
+        });
+    </script>
+    <script>
+        $(document).on("click.nice_select", ".nice-select", function(event) {
+            var $dropdown = $(this);
+
+            $(".nice-select")
+                .not($dropdown)
+                .removeClass("open");
+            $dropdown.toggleClass("open");
+
+            if ($dropdown.hasClass("open")) {
+                $dropdown.find(".option");
+                $dropdown.find(".nice-select-search").val("");
+                $dropdown.find(".nice-select-search").focus();
+                $dropdown.find(".focus").removeClass("focus");
+                $dropdown.find(".selected").addClass("focus");
+                $dropdown.find("ul li").show();
+            } else {
+                $dropdown.focus();
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+    <script>
+        $("#sidebar_menu").metisMenu();
+        // metisMenu 
+        $("#admin_profile_active").metisMenu();
+        $("#sidebar_menu").find("a").removeClass("active");
+        $("#sidebar_menu").find("li").removeClass("mm-active");
+        $("#sidebar_menu").find("li ul").removeClass("mm-show");
+
+        var current = window.location.pathname
+        $("#sidebar_menu >li a").filter(function() {
+
+            var link = $(this).attr("href");
+            if (link) {
+                if (current.indexOf(link) != -1) {
+                    $(this).parents().parents().children('ul.mm-collapse').addClass('mm-show').closest('li').addClass('mm-active');
+                    $(this).addClass('active');
+                    return false;
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

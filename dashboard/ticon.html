@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://www.jsdelivr.com/package/npm/themify-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css"> -->
+    <!--  <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css"> -->
+    <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/metisMenu.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="overlay"></div>
+        <!-- sidebar -->
+
+        <nav class="sidebar dark_sidebar">
+            <div class="logo d-flex justify-content-between">
+                <a class="large_logo" href="index.html">Vertex Technosys</a>
+                <!-- <div class="sidebar_close_icon d-lg-none">
+                    <i class="ti-close"></i>
+                </div> -->
+            </div>
+            <ul id="sidebar_menu" class="metismenu">
+                <li class="">
+                    <a href="index.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-home menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Dashboard </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="tabs.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-file menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Tabs</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-user menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Pages</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="password.html">Forget Password</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fab fa-app-store"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Applications</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="mail.html">Mailbox</a></li>
+                        <li><a href="chat.html">Chat</a></li>
+                        <li><a href="faq.html">FAQ Section</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fad fa-bring-forward menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>forms</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="Basic_Elements.html">Basic Elements</a></li>
+                        <li><a href="Groups.html">Groups</a></li>
+                        <li><a href="Max_Length.html">Max Length</a></li>
+                        <li><a href="Layouts.html">Layouts</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="far fa-border-none menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Table</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="basic-table.html">Basic Table</a></li>
+                        <li><a href="data-table.html" class="active">Data Tables</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-font menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Icons</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="ficon.html">Fontawesome Icon</a></li>
+                        <li><a href="ticon.html">themefy icon</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="chart.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fal fa-chart-pie-alt"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Charts</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="map.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fal fa-globe-europe"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Maps</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="blank.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-file menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Blank</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="error.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="far fa-exclamation-triangle 2x menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Error</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- sidebar wrapper -->
+
+        <!-- Page-content -->
+        <div id="page-content-wrapper">
+            <div id="content">
+                <div class="container-fluid p-0 px-lg-0 px-md-0">
+                    <div class="main-content pt-0">
+                        <nav class="navbar navbar-expand navbar-light my-navbar">
+                            <div type="button" id="bar" class="nav-icon1 humburger animated fadeInLeft  sidebar_icon" data-toggle="offcanvas">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <!-- Top bar Search -->
+                            <form class="d-none d-sm-inline-block form-inline navbar-search px-3">
+                                <div class="input-group">
+                                    <input type="text" name="search" class="form-control bg-light" placeholder="Search for..">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button"><i class="far fa-search fa-sm"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Top Bar nav -->
+                            <div class="header_right d-flex justify-content-end align-items-center">
+                                <div class="header_notification_warp d-flex align-items-center">
+                                    <li>
+                                        <a class="CHATBOX_open nav-link-notify" href="#"> <i class="far fa-envelope"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a class="bell_notification_clicker nav-link-notify" href="#"> <i class="far fa-bell fa-fw"></i>
+                                            <!-- <span>2</span> -->
+                                        </a>
+                                    </li>
+
+                                </div>
+                                <div class="profile_info d-flex align-items-center">
+                                    <div class="profile_thumb mr_20">
+                                        <img src="images/1.png" alt="#">
+                                    </div>
+                                    <div class="author_name">
+                                        <h4 class="f_s_15 f_w_500 mb-0">Jiue Anderson</h4>
+                                        <p class="f_s_12 f_w_400">Manager</p>
+                                    </div>
+                                    <div class="profile_info_iner">
+                                        <div class="profile_author_name">
+                                            <p>Manager</p>
+                                            <h5>Jiue Anderson</h5>
+                                        </div>
+                                        <div class="profile_info_details">
+                                            <a href="#">My Profile </a>
+                                            <a href="#">Settings</a>
+                                            <a href="#">Log Out </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Top Bar nav -->
+                            <!-- Top bar Search -->
+                        </nav>
+                    </div>
+
+                    <!-- content starts -->
+                    <div class="main-content">
+                        <!-- Begin Page Content -->
+                        <div class="container-fluid px-lg-4">
+                            <div class="row">
+                                <div class="col-md-12 mt-lg-4 mt-4">
+                                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                        <h1 class="h3 mb-0 text-gray-800">Themify Icon</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Begin Page Content -->
+                        <div class="inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <div class="page-body">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-12">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0 mb-2">Arrows &amp; Direction Icons</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+                                                        <div class="row icon-lists">
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrow-up"></i> ti-arrow-up</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrow-right"></i> ti-arrow-right</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrow-left"></i> ti-arrow-left</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrow-down"></i> ti-arrow-down</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrows-vertical"></i> ti-arrows-vertical</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrows-horizontal"></i> ti-arrows-horizontal</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-angle-up"></i> ti-angle-up</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-angle-right"></i> ti-angle-right</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-angle-left"></i> ti-angle-left</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-angle-down"></i> ti-angle-down</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-angle-double-up"></i> ti-angle-double-up</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-angle-double-right"></i> ti-angle-double-right</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-angle-double-left"></i> ti-angle-double-left</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-angle-double-down"></i> ti-angle-double-down</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-move"></i> ti-move</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-fullscreen"></i> ti-fullscreen</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrow-top-right"></i> ti-arrow-top-right</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrow-top-left"></i> ti-arrow-top-left</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrow-circle-up"></i> ti-arrow-circle-up</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrow-circle-right"></i> ti-arrow-circle-right</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrow-circle-left"></i> ti-arrow-circle-left</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrow-circle-down"></i> ti-arrow-circle-down</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-arrows-corner"></i> ti-arrows-corner</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-split-v"></i> ti-split-v</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-split-v-alt"></i> ti-split-v-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-split-h"></i> ti-split-h</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-hand-point-up"></i> ti-hand-point-up</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-hand-point-right"></i> ti-hand-point-right</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-hand-point-left"></i> ti-hand-point-left</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-hand-point-down"></i> ti-hand-point-down</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-back-right"></i> ti-back-right</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-back-left"></i> ti-back-left</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-exchange-vertical"></i> ti-exchange-vertical</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0 mb-2">Web App Icons</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+                                                        <div class="row icon-lists">
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti icon-wand"></i> ti-wand</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-save"></i> ti-save</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-save-alt"></i> ti-save-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-direction"></i> ti-direction</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-direction-alt"></i> ti-direction-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-user"></i> ti-user</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-link"></i> ti-link</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-unlink"></i> ti-unlink</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-trash"></i> ti-trash</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-target"></i> ti-target</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-tag"></i> ti-tag</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-desktop"></i> ti-desktop</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-tablet"></i> ti-tablet</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-mobile"></i> ti-mobile</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-email"></i> ti-email</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-star"></i> ti-star</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti-spray"></i> ti-spray</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-signal"></i> ti-signal</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-shopping-cart"></i> ti-shopping-cart</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-shopping-cart-full"></i> ti-shopping-cart-full</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-settings"></i> ti-settings</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-search"></i> ti-search</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-zoom-in"></i> ti-zoom-in</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-zoom-out"></i> ti-zoom-out</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-cut"></i> ti-cut</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-ruler"></i> ti-ruler</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-ruler-alt-2"></i> ti-ruler-alt-2</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-ruler-pencil"></i> ti-ruler-pencil</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-ruler-alt"></i> ti-ruler-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-bookmark"></i> ti-bookmark</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-bookmark-alt"></i> ti-bookmark-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-reload"></i> ti-reload</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-plus"></i> ti-plus</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-minus"></i> ti-minus</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-close"></i> ti-close</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-pin"></i> ti-pin</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-pencil"></i> ti-pencil</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-pencil-alt"></i> ti-pencil-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-paint-roller"></i> ti-paint-roller</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-paint-bucket"></i> ti-paint-bucket</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-na"></i> ti-na</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-medall"></i> ti-medall</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-medall-alt"></i> ti-medall-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-marker"></i> ti-marker</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-marker-alt"></i> ti-marker-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-lock"></i> ti-lock</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-unlock"></i> ti-unlock</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-location-arrow"></i> ti-location-arrow</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-layout"></i> ti-layout</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-layers"></i> ti-layers</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-layers-alt"></i> ti-layers-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-key"></i> ti-key</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-image"></i> ti-image</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-heart"></i> ti-heart</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-heart-broken"></i> ti-heart-broken</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-hand-stop"></i> ti-hand-stop</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-hand-open"></i> ti-hand-open</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-hand-drag"></i> ti-hand-drag</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-flag"></i> ti-flag</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-flag-alt"></i> ti-flag-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-flag-alt-2"></i> ti-flag-alt-2</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-eye"></i> ti-eye</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-import"></i> ti-import</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-export"></i> ti-export</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-cup"></i> ti-cup</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-crown"></i> ti-crown</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-comments"></i> ti-comments</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-comment"></i> ti-comment</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-comment-alt"></i> ti-comment-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-thought"></i> ti-thought</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-clip"></i> ti-clip</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-check"></i> ti-check</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-check-box"></i> ti-check-box</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-camera"></i> ti-camera</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-announcement"></i> ti-announcement</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-brush"></i> ti-brush</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-brush-alt"></i> ti-brush-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-palette"></i> ti-palette</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-briefcase"></i> ti-briefcase</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-bolt"></i> ti-bolt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-bolt-alt"></i> ti-bolt-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-blackboard"></i> ti-blackboard</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-bag"></i> ti-bag</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-world"></i> ti-world</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-wheelchair"></i> ti-wheelchair</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-car"></i> ti-car</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-truck"></i> ti-truck</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-timer"></i> ti-timer</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-ticket"></i> ti-ticket</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-thumb-up"></i> ti-thumb-up</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-thumb-down"></i> ti-thumb-down</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-stats-up"></i> ti-stats-up</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-stats-down"></i> ti-stats-down</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-shine"></i> ti-shine</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-shift-right"></i> ti-shift-right</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-shift-left"></i> ti-shift-left</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-shift-right-alt"></i> ti-shift-right-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-shift-left-alt"></i> ti-shift-left-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-shield"></i> ti-shield</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-notepad"></i> ti-notepad</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-server"></i> ti-server</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-pulse"></i> ti-pulse</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-printer"></i> ti-printer</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-power-off"></i> ti-power-off</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-plug"></i> ti-plug</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-pie-chart"></i> ti-pie-chart</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-panel"></i> ti-panel</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-package"></i> ti-package</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-music"></i> ti-music</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-music-alt"></i> ti-music-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-mouse"></i> ti-mouse</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-mouse-alt"></i> ti-mouse-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-money"></i> ti-money</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-microphone"></i> ti-microphone</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-menu"></i> ti-menu</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-menu-alt"></i> ti-menu-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-map"></i> ti-map</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-map-alt"></i> ti-map-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-location-pin"></i> ti-location-pin</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-light-bulb"></i> ti-light-bulb</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-info"></i> ti-info</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-infinite"></i> ti-infinite</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-id-badge"></i> ti-id-badge</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-hummer"></i> ti-hummer</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-home"></i> ti-home</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-help"></i> ti-help</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-headphone"></i> ti-headphone</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-harddrives"></i> ti-harddrives</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-harddrive"></i> ti-harddrive</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-gift"></i> ti-gift</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-game"></i> ti-game</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-filter"></i> ti-filter</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-files"></i> ti-files</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-file"></i> ti-file</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-zip"></i> ti-zip</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-folder"></i> ti-folder</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-envelope"></i> ti-envelope</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-dashboard"></i> ti-dashboard</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-cloud"></i> ti-cloud</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-cloud-up"></i> ti-cloud-up</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-cloud-down"></i> ti-cloud-down</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-clipboard"></i> ti-clipboard</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-calendar"></i> ti-calendar</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-book"></i> ti-book</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-bell"></i> ti-bell</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-basketball"></i> ti-basketball</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-bar-chart"></i> ti-bar-chart</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-bar-chart-alt"></i> ti-bar-chart-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-archive"></i> ti-archive</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-anchor"></i> ti-anchor</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-alert"></i> ti-alert</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-alarm-clock"></i> ti-alarm-clock</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-agenda"></i> ti-agenda</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-write"></i> ti-write</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-wallet"></i> ti-wallet</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-video-clapper"></i> ti-video-clapper</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-video-camera"></i> ti-video-camera</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-vector"></i> ti-vector</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-support"></i> ti-support</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-stamp"></i> ti-stamp</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-slice"></i> ti-slice</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-shortcode"></i> ti-shortcode</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-receipt"></i> ti-receipt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-pin2"></i> ti-pin2</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-pin-alt"></i> ti-pin-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-pencil-alt2"></i> ti-pencil-alt2</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-eraser"></i> ti-eraser</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-more"></i> ti-more</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-more-alt"></i> ti-more-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-microphone-alt"></i> ti-microphone-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-magnet"></i> ti-magnet</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-line-double"></i> ti-line-double</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-line-dotted"></i> ti-line-dotted</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-line-dashed"></i> ti-line-dashed</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-ink-pen"></i> ti-ink-pen</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-info-alt"></i> ti-info-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-help-alt"></i> ti-help-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-headphone-alt"></i> ti-headphone-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-gallery"></i> ti-gallery</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-face-smile"></i> ti-face-smile</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-face-sad"></i> ti-face-sad</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-credit-card"></i> ti-credit-card</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-comments-smiley"></i> ti-comments-smiley</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-time"></i> ti-time</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-share"></i> ti-share</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-share-alt"></i> ti-share-alt</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-rocket"></i> ti-rocket</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-new-window"></i> ti-new-window</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-rss"></i> ti-rss</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-rss-alt"></i> ti-rss-alt</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="white_card card_height_100 mb_30">
+                                                    <div class="white_card_header">
+                                                        <div class="box_header m-0">
+                                                            <div class="main-title">
+                                                                <h3 class="m-0 mb-2">control Icons</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white_card_body">
+                                                        <div class="row icon-lists">
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-control-stop"></i> ti-control-stop</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-control-shuffle"></i> ti-control-shuffle</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-control-play"></i> ti-control-play</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-control-pause"></i> ti-control-pause</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-control-forward"></i> ti-control-forward</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-control-backward"></i> ti-control-backward</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-volume"></i> ti-volume</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-control-skip-forward"></i> ti-control-skip-forward</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-control-skip-backward"></i> ti-control-skip-backward</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-control-record"></i> ti-control-record</div>
+                                                            <div class="col-sm-6 col-md-6 col-lg-4"><i class="ti ti-control-eject"></i> ti-control-eject</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content Ends -->
+                </div>
+            </div>
+        </div>
+        <!-- Page content -->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="js/metisMenu.js"></script>
+    <script src="./js/popup.js"></script>
+    <!-- <script type="text/javascript">
+        $('#bar').click(function() {
+            $(this).toggleClass('close');
+            $('#page-content-wrapper ,#sidebar-wrapper').toggleClass('toggled');
+        })
+    </script> -->
+    <script>
+        $('.sidebar_icon').on('click', function() {
+            $('.sidebar ,#page-content-wrapper').toggleClass('active_sidebar');
+        });
+        $('.sidebar_close_icon').on('click', function() {
+            $('.sidebar ,#page-content-wrapper').removeClass('active_sidebar');
+        });
+    </script>
+    <script>
+        $(document).on("click.nice_select", ".nice-select", function(event) {
+            var $dropdown = $(this);
+
+            $(".nice-select")
+                .not($dropdown)
+                .removeClass("open");
+            $dropdown.toggleClass("open");
+
+            if ($dropdown.hasClass("open")) {
+                $dropdown.find(".option");
+                $dropdown.find(".nice-select-search").val("");
+                $dropdown.find(".nice-select-search").focus();
+                $dropdown.find(".focus").removeClass("focus");
+                $dropdown.find(".selected").addClass("focus");
+                $dropdown.find("ul li").show();
+            } else {
+                $dropdown.focus();
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+    <script>
+        $("#sidebar_menu").metisMenu();
+        // metisMenu 
+        $("#admin_profile_active").metisMenu();
+        $("#sidebar_menu").find("a").removeClass("active");
+        $("#sidebar_menu").find("li").removeClass("mm-active");
+        $("#sidebar_menu").find("li ul").removeClass("mm-show");
+
+        var current = window.location.pathname
+        $("#sidebar_menu >li a").filter(function() {
+
+            var link = $(this).attr("href");
+            if (link) {
+                if (current.indexOf(link) != -1) {
+                    $(this).parents().parents().children('ul.mm-collapse').addClass('mm-show').closest('li').addClass('mm-active');
+                    $(this).addClass('active');
+                    return false;
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

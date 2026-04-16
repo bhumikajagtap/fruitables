@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://www.jsdelivr.com/package/npm/themify-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css"> -->
+    <!--  <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css"> -->
+    <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/metisMenu.css">
+</head>
+
+<body class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed">
+    <div class="wrapper">
+        <div class="overlay"></div>
+        <!-- sidebar -->
+        <nav class="sidebar dark_sidebar">
+            <div class="logo d-flex justify-content-between">
+                <a class="large_logo" href="index.html">Vertex Technosys</a>
+                <!-- <div class="sidebar_close_icon d-lg-none">
+                    <i class="ti-close"></i>
+                </div> -->
+            </div>
+            <ul id="sidebar_menu" class="metismenu">
+                <li class="">
+                    <a href="index.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-home menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Dashboard </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="tabs.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-file menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Tabs</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-user menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Pages</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="password.html">Forgot Password</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fab fa-app-store"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Applications</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="mail.html">Mailbox</a></li>
+                        <li><a href="chat.html" class="active">Chat</a></li>
+                        <li><a href="faq.html">FAQ Section</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fad fa-bring-forward menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>forms</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="Basic_Elements.html">Basic Elements</a></li>
+                        <li><a href="Groups.html">Groups</a></li>
+                        <li><a href="Max_Length.html">Max Length</a></li>
+                        <li><a href="Layouts.html">Layouts</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="far fa-border-none menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Table</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="basic-table.html">Basic Table</a></li>
+                        <li><a href="data-table.html" class="active">Data Tables</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-font menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Icons</span>
+                        </div>
+                    </a>
+                    <ul class="mm-collapse">
+                        <li><a href="ficon.html">Fontawesome Icon</a></li>
+                        <li><a href="ticon.html">themefy icon</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="chart.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fal fa-chart-pie-alt"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Charts</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="map.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fal fa-globe-europe"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Maps</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="blank.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-file menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Blank</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="error.html" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="far fa-exclamation-triangle 2x menu-icon"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Error</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- sidebar wrapper -->
+
+        <!-- Page-content -->
+        <div id="page-content-wrapper">
+            <div id="content">
+                <div class="container-fluid p-0 px-lg-0 px-md-0">
+                    <div class="main-content pt-0">
+                        <nav class="navbar navbar-expand navbar-light my-navbar">
+                            <div type="button" id="bar" class="nav-icon1 humburger animated fadeInLeft  sidebar_icon" data-toggle="offcanvas">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <!-- Top bar Search -->
+                            <form class="d-none d-sm-inline-block form-inline navbar-search px-3">
+                                <div class="input-group">
+                                    <input type="text" name="search" class="form-control bg-light" placeholder="Search for..">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button"><i class="far fa-search fa-sm"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Top Bar nav -->
+                            <div class="header_right d-flex justify-content-end align-items-center">
+                                <div class="header_notification_warp d-flex align-items-center">
+                                    <li>
+                                        <a class="CHATBOX_open nav-link-notify" href="#"> <i class="far fa-envelope"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a class="bell_notification_clicker nav-link-notify" href="#"> <i class="far fa-bell fa-fw"></i>
+                                            <!-- <span>2</span> -->
+                                        </a>
+                                    </li>
+
+                                </div>
+                                <div class="profile_info d-flex align-items-center">
+                                    <div class="profile_thumb mr_20">
+                                        <img src="images/1.png" alt="#">
+                                    </div>
+                                    <div class="author_name">
+                                        <h4 class="f_s_15 f_w_500 mb-0">Jiue Anderson</h4>
+                                        <p class="f_s_12 f_w_400">Manager</p>
+                                    </div>
+                                    <div class="profile_info_iner">
+                                        <div class="profile_author_name">
+                                            <p>Manager</p>
+                                            <h5>Jiue Anderson</h5>
+                                        </div>
+                                        <div class="profile_info_details">
+                                            <a href="#">My Profile </a>
+                                            <a href="#">Settings</a>
+                                            <a href="#">Log Out </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Top Bar nav -->
+                            <!-- Top bar Search -->
+                        </nav>
+                    </div>
+
+                    <!-- content starts -->
+                    <div class="main-content">
+                        <!-- Begin Page Content -->
+                        <div class="container-fluid px-lg-4">
+                            <div class="row">
+                                <div class="col-md-12 mt-lg-4 mt-4">
+                                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                        <h1 class="h3 mb-0 text-gray-800">Chat Box</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Begin Page Content -->
+                        <div class="inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <div class="page-body">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-12">
+                                                <div class="messages_box_area">
+                                                    <div class="messages_list">
+                                                        <div class="white_box ">
+                                                            <div class="white_box_tittle list_header">
+                                                                <h4>Chat List</h4>
+                                                            </div>
+                                                            <div class="serach_field_2">
+                                                                <div class="search_inner">
+                                                                    <form active="#">
+                                                                        <div class="search_field">
+                                                                            <input type="text" placeholder="Search content here...">
+                                                                        </div>
+                                                                        <button type="submit"> <i class="ti ti-search"></i> </button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <div class="message_pre_left">
+                                                                            <div class="message_preview_thumb">
+                                                                                <img src="images/1.png" alt="">
+                                                                            </div>
+                                                                            <div class="messges_info">
+                                                                                <h4>Travor James</h4>
+                                                                                <p>i know you are doing great</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="messge_time">
+                                                                            <span>28th Nov</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <div class="message_pre_left">
+                                                                            <div class="message_preview_thumb">
+                                                                                <img src="images/1.png" alt="">
+                                                                            </div>
+                                                                            <div class="messges_info">
+                                                                                <h4>Travor James</h4>
+                                                                                <p>i know you are doing great</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="messge_time">
+                                                                            <span>28th Nov</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <div class="message_pre_left">
+                                                                            <div class="message_preview_thumb">
+                                                                                <img src="images/1.png" alt="">
+                                                                            </div>
+                                                                            <div class="messges_info">
+                                                                                <h4>Travor James</h4>
+                                                                                <p>i know you are doing great</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="messge_time">
+                                                                            <span>28th Nov</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <div class="message_pre_left">
+                                                                            <div class="message_preview_thumb">
+                                                                                <img src="images/1.png" alt="">
+                                                                            </div>
+                                                                            <div class="messges_info">
+                                                                                <h4>Travor James</h4>
+                                                                                <p>i know you are doing great</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="messge_time">
+                                                                            <span>28th Nov</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <div class="message_pre_left">
+                                                                            <div class="message_preview_thumb">
+                                                                                <img src="images/1.png" alt="">
+                                                                            </div>
+                                                                            <div class="messges_info">
+                                                                                <h4>Travor James</h4>
+                                                                                <p>i know you are doing great</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="messge_time">
+                                                                            <span>28th Nov</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <div class="message_pre_left">
+                                                                            <div class="message_preview_thumb">
+                                                                                <img src="images/1.png" alt="">
+                                                                            </div>
+                                                                            <div class="messges_info">
+                                                                                <h4>Travor James</h4>
+                                                                                <p>i know you are doing great</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="messge_time">
+                                                                            <span>28th Nov</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <div class="message_pre_left">
+                                                                            <div class="message_preview_thumb">
+                                                                                <img src="images/1.png" alt="">
+                                                                            </div>
+                                                                            <div class="messges_info">
+                                                                                <h4>Travor James</h4>
+                                                                                <p>i know you are doing great</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="messge_time">
+                                                                            <span>28th Nov</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="messages_chat mb_30">
+                                                        <div class="white_box ">
+                                                            <div class="single_message_chat">
+                                                                <div class="message_pre_left">
+                                                                    <div class="message_preview_thumb">
+                                                                        <img src="images/1.png" alt="">
+                                                                    </div>
+                                                                    <div class="messges_info">
+                                                                        <h4>Travor James</h4>
+                                                                        <p>Yesterday at 6.33 pm</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="message_content_view red_border">
+                                                                    <p>
+                                                                        Dear KK,
+                                                                        <br> Thank you for your update.
+                                                                        <br>
+
+                                                                        <span>
+                                                                            We do not sell or share your details without your permission. Find
+                                                                            out
+                                                                            more
+                                                                            in our Privacy Policy. Your username, email and password can be
+                                                                            updated
+                                                                            via
+                                                                            your Codepixar Account settings.
+                                                                            <br>
+                                                                        </span> Regards,
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="single_message_chat sender_message">
+                                                                <div class="message_pre_left">
+                                                                    <div class="messges_info">
+                                                                        <h4>Agatha Kristy</h4>
+                                                                        <p>Yesterday at 6.33 pm</p>
+                                                                    </div>
+                                                                    <div class="message_preview_thumb">
+                                                                        <img src="images/1.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="message_content_view">
+                                                                    <p>
+                                                                        Dear KK,
+                                                                        <br> Thank you for your update.
+                                                                        <br>
+
+                                                                        <span>
+                                                                            We do not sell or share your details without your permission. Find
+                                                                            out
+                                                                            more
+                                                                            in our Privacy Policy. Your username, email and password can be
+                                                                            updated
+                                                                            via
+                                                                            your Codepixar Account settings.
+                                                                            <br>
+                                                                        </span> Regards,
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="message_send_field">
+                                                                <input type="text" placeholder="Write your message" value="">
+                                                                <button class="btn_1" type="submit">Send</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content Ends -->
+                </div>
+            </div>
+        </div>
+        <!-- Page content -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="js/metisMenu.js"></script>
+    <script src="./js/popup.js"></script>
+    <!-- <script type="text/javascript">
+        $('#bar').click(function() {
+            $(this).toggleClass('close');
+            $('#page-content-wrapper ,#sidebar-wrapper').toggleClass('toggled');
+        })
+    </script> -->
+    <script>
+        $('.sidebar_icon').on('click', function() {
+            $('.sidebar ,#page-content-wrapper').toggleClass('active_sidebar');
+        });
+        $('.sidebar_close_icon').on('click', function() {
+            $('.sidebar ,#page-content-wrapper').removeClass('active_sidebar');
+        });
+    </script>
+    <script>
+        $(document).on("click.nice_select", ".nice-select", function(event) {
+            var $dropdown = $(this);
+
+            $(".nice-select")
+                .not($dropdown)
+                .removeClass("open");
+            $dropdown.toggleClass("open");
+
+            if ($dropdown.hasClass("open")) {
+                $dropdown.find(".option");
+                $dropdown.find(".nice-select-search").val("");
+                $dropdown.find(".nice-select-search").focus();
+                $dropdown.find(".focus").removeClass("focus");
+                $dropdown.find(".selected").addClass("focus");
+                $dropdown.find("ul li").show();
+            } else {
+                $dropdown.focus();
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+    <script>
+        $("#sidebar_menu").metisMenu();
+        // metisMenu 
+        $("#admin_profile_active").metisMenu();
+        $("#sidebar_menu").find("a").removeClass("active");
+        $("#sidebar_menu").find("li").removeClass("mm-active");
+        $("#sidebar_menu").find("li ul").removeClass("mm-show");
+
+        var current = window.location.pathname
+        $("#sidebar_menu >li a").filter(function() {
+
+            var link = $(this).attr("href");
+            if (link) {
+                if (current.indexOf(link) != -1) {
+                    $(this).parents().parents().children('ul.mm-collapse').addClass('mm-show').closest('li').addClass('mm-active');
+                    $(this).addClass('active');
+                    return false;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
