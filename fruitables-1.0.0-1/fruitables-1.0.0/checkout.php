@@ -1,0 +1,294 @@
+<?php
+session_start();
+include('header.php');
+include('config.php');   
+include('send_mail.php');
+
+// -------------------
+// SHIPPING
+// -------------------
+$shipping = 0;
+if(isset($_POST['shipping'])){
+    $shipping = (int)$_POST['shipping'];
+}
+
+// -------------------
+// PLACE ORDER
+// -------------------
+if(isset($_POST['place_order'])){
+
+     if(!empty($_SESSION['cart'])){
+
+        $fname   = $_POST['fname'];
+        $lname   = $_POST['lname'];
+        $address = $_POST['address'];
+        $city    = $_POST['city'];
+        $country = $_POST['country'];
+        $pincode = $_POST['pincode'];
+        $mobileno  = $_POST['mobileno'];
+        $email   = $_POST['email'];
+        $note    = $_POST['note'];
+
+        $sql1 = "INSERT INTO bill_detaill
+        (fname,lname,address,city,country,pincode,mobileno,email,note)
+        VALUES
+        ('$fname','$lname','$address','$city','$country',
+         '$pincode','$mobileno','$email','$note')";
+
+        if(mysqli_query($con,$sql1))
+         {
+             echo "data insert";
+
+        }else{
+            die(mysqli_error($con));
+        }
+
+         $bill_id = mysqli_insert_id($con);
+
+            foreach($_SESSION['cart'] as $item){
+
+                $product_id   = $item['id'];
+                $product_name = $item['pname'];
+                $price       = $item['price'];
+                $quantity     =  $item['quantity'];
+                $item_total   = $price * $quantity;
+
+                $checkStock = "SELECT qty FROM stock WHERE pid = '$product_id'";
+                $res = mysqli_query($con, $checkStock);
+                $row = mysqli_fetch_assoc($res);
+
+    if(!$row){
+        echo "<script>
+                alert('Product not found in stock');
+                window.location='cart.php';
+              </script>";
+        exit();
+    }
+    
+
+    if($quantity > $row['qty']){
+        echo "<script>
+                alert('Only ".$row['qty']." items available');
+                window.location='cart.php';
+              </script>";
+        exit();
+    }
+
+
+                $sql2 = "INSERT INTO order_details
+                (bill_id,product_id,product_name,price,quantity,total)
+                VALUES
+                ('$bill_id','$product_id','$product_name',
+                 '$price','$quantity','$item_total')";
+
+                mysqli_query($con,$sql2);
+                
+                $updateStock = "UPDATE stock 
+                SET qty = qty - $quantity 
+                WHERE pid = $product_id";
+
+                mysqli_query($con, $updateStock);
+            }
+
+            unset($_SESSION['cart']);
+      echo "<script>
+        alert('Order Placed Successfully!');
+        window.location='order_sucess.php?bill_id=".$bill_id."';
+      </script>";
+     exit();
+     }
+}
+
+
+$session_email = $_SESSION['email'];
+
+// Fetch user details
+$userQuery = "SELECT rname, email, contact FROM registration WHERE email='$session_email'";
+$userResult = mysqli_query($con, $userQuery);
+$user = mysqli_fetch_assoc($userResult);
+
+?>
+
+        <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">Checkout</h1>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-white">Checkout</li>
+            </ol>
+        </div>
+        <!-- Single Page Header End -->
+
+
+<!-- Checkout Page Start -->
+<div class="container py-5">
+    <h1 class="mb-4">Billing details</h1>
+
+    <form method="post">
+
+    <div class="row g-5">
+
+        <!-- LEFT SIDE (Billing) -->
+        <div class="col-md-12 col-lg-6 col-xl-7">
+
+            <div class="row">
+
+                <div class="col-md-12 col-lg-6">
+                    <div class="form-item w-100">
+                        <label class="form-label my-3">First Name<sup>*</sup></label>
+                        <input type="text" name="fname" class="form-control" value="<?php echo $user['rname']; ?>" required>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6">
+                    <div class="form-item w-100">
+                        <label class="form-label my-3">Last Name<sup>*</sup></label>
+                        <input type="text" name="lname" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-item">
+                <label class="form-label my-3">Address <sup>*</sup></label>
+                <input type="text" name="address" class="form-control" required>
+            </div>
+
+            <div class="form-item">
+                <label class="form-label my-3">Town/City<sup>*</sup></label>
+                <input type="text" name="city" class="form-control" required>
+            </div>
+
+            <div class="form-item">
+                <label class="form-label my-3">Country<sup>*</sup></label>
+                <input type="text" name="country" class="form-control" required>
+            </div>
+
+            <div class="form-item">
+                <label class="form-label my-3">Postcode/Zip<sup>*</sup></label>
+                <input type="text" name="pincode" class="form-control" required>
+            </div>
+
+            <div class="form-item">
+                <label class="form-label my-3">Mobile<sup>*</sup></label>
+                <input type="tel" name="mobileno" class="form-control"  value="<?php echo $user['contact']; ?>" required>
+            </div>
+
+            <div class="form-item">
+                <label class="form-label my-3">Email Address<sup>*</sup></label>
+                <input type="email" name="email" class="form-control"  value="<?php echo $user['email']; ?>" required>
+            </div>
+
+            <div class="form-item">
+                <label class="form-label my-3">Note<sup>*</sup></label>
+
+                <textarea name="note" class="form-control"
+                    cols="30" rows="5"
+                    placeholder="Order Notes (Optional)" required></textarea>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE (Cart) -->
+         <div class="col-md-12 col-lg-6 col-xl-5">  
+
+            <div class="table-responsive">
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    <?php
+
+                    $total = 0;
+
+                    if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
+                        foreach($_SESSION['cart'] as $item){
+
+                            $subtotal = $item['price'] * $item['quantity'];
+                            $total += $subtotal;
+                    ?>
+
+                        <tr>
+                            <td>
+                                <img src="../../dashboard/file/<?php echo $item['img'];?>"
+                                     class="img-fluid rounded-circle"
+                                     style="width:90px;height:90px;">
+                            </td>
+                            <td><?php echo $item['pname'];?></td>
+                            <td><?php echo $item['price'];?></td>
+                            <td><?php echo $item['quantity'];?></td>
+                            <td><?php echo $subtotal;?></td>
+                        </tr>
+
+                    <?php } ?>
+
+                        <tr>
+                            <td colspan="4">Subtotal</td>
+                            <td><?php echo $total;?></td>
+                        </tr>
+
+<tr>
+<td colspan="5">
+    <strong>Shipping</strong><br>
+
+    <label>
+        <input type="radio" name="shipping" value="0"
+        <?php if(isset($_POST['shipping']) && $_POST['shipping']==0) echo "checked"; ?>
+        onchange="this.form.submit()"> Free
+    </label><br>
+
+    <label>
+        <input type="radio" name="shipping" value="15"
+        <?php if(isset($_POST['shipping']) && $_POST['shipping']==15) echo "checked"; ?>
+        onchange="this.form.submit()"> Flat $15
+    </label><br>
+
+    <label>
+        <input type="radio" name="shipping" value="8"
+        <?php if(isset($_POST['shipping']) && $_POST['shipping']==8) echo "checked"; ?>
+        onchange="this.form.submit()"> Pickup $8
+    </label>
+</td>
+</tr>
+
+                        <tr>
+                            <td colspan="4"><strong>Total</strong></td>
+                            <td><strong><?php echo $total + $shipping;?></strong></td>
+                        </tr>
+
+                    <?php } ?>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center pt-3">
+                <button type="submit" name="place_order" 
+                    class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary">
+                    Place Order
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    </form> 
+
+</div>
+<!-- Checkout Page End -->
+
+<?php
+include('footer.php');
+?>
